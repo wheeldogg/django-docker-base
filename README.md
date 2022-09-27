@@ -134,3 +134,28 @@ While the backend is running via docker.
 Select Run start debugging in VScode.
 
 You can then access the debugging varialbes in the debug console in VScode.
+
+
+## The application is extended to give example of the rest API
+
+to check this working run the server and navigate to 
+
+`http://localhost:8000/api/hello-world/items/`
+
+alternatively you can use `CURl` command
+
+## Running commands in django
+
+The Django commands (`migrate`, `create_admin` and `create_groups`) can be run in the container directly:
+
+```bash
+docker-compose exec webapp python manage.py <COMMAND>
+``` 
+
+This way you can create an admin user to help manage the celery tasks for example
+
+To get the API to work you need to migrate
+
+```bash
+docker-compose -f docker-compose.yml exec webapp python manage.py migrate
+```
