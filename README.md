@@ -3,7 +3,7 @@ Quickly setup a new django env with docker
 
 ## Credits to this blog post and video
 
-[ockerized-django-app-with-vscode](https://londonappdeveloper.com/debugging-a-dockerized-django-app-with-vscode/)
+[Dockerized-django-app-with-vscode](https://londonappdeveloper.com/debugging-a-dockerized-django-app-with-vscode/)
 
 ## Process to recreate entirely.
 
